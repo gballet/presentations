@@ -1,0 +1,10 @@
+digraph D {
+rankdir=LR;
+node [shape="box",fontname="Courier"]
+code1 [label="PUSH1\nPUSH1\n...\nCALL",style=filled,fillcolor="lightblue"]
+code2 [label="RETURNDATACOPY\n...\nSTOP",style=filled,fillcolor="lightblue"]
+precompile [label="movq rbp, rsp\nsubq rsp, 256\l...\lxorq rax, rax\nret\l"]
+
+code1 -> precompile [label="Calling the\nprecompile"]
+precompile -> code2 [label="Returning from\nthe precompile"]
+}

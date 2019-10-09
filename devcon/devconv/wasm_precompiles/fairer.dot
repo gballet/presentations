@@ -1,0 +1,15 @@
+digraph D {
+rankdir = LR;
+node [shape="box"];
+subgraph cluster1 {
+style=dotted;
+label="EVM";
+SSTORE [fontname="Courier"]
+}
+subgraph cluster2 {
+style=dotted;
+label="WASM";
+WASM [fontname="Courier",label="loop $copy\lget_local $0\li32.const 1\li32.sub\li32.load\lget_local $1\li32.const 1\li32.sub\li32.store\lget_local $0\lbr_if $copy\lcall $storage_sync"]
+}
+SSTORE -> WASM
+}

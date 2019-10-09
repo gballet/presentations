@@ -1,0 +1,43 @@
+digraph D {
+node [shape="box"];
+subgraph cluster1 {
+style=dotted;
+bgcolor=lightyellow;
+label="On-chain storage";
+onchainroot [label="tree root"]
+}
+subgraph cluster2 {
+style=dotted;
+bgcolor=lightyellow;
+label="Level 2 account tree";
+accountroot [label="account tree root"]
+accountleaf [label="Account"]
+subtree1 [label="0*"]
+subtree2 [label="1*"]
+subtree3 [label="2*"]
+subtree4 [label="..."]
+
+accountroot -> subtree1 [label="0"]
+accountroot -> subtree2 [label="1"]
+accountroot -> subtree3 [label="2"]
+accountroot -> subtree4 [label="n..."]
+subtree3 -> accountleaf [label="0x1234"]
+}
+
+subgraph cluster3 {
+style=dotted;
+edge [lblstyle="above, sloped"];
+bgcolor=lightyellow;
+label="Level 2 storage tree";
+storageroot [label="storage tree root"]
+s1 [label="0xdeadbeef"]
+s2 [label="0xcafedecaf"]
+
+storageroot -> s1 [label="0x0000"];
+storageroot -> s2 [label="0x1000"];
+}
+
+onchainroot -> accountroot [constraint=false]
+accountleaf -> storageroot [constraint=false]
+}
+

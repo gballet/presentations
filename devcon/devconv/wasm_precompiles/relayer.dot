@@ -1,0 +1,34 @@
+digraph D {
+node [shape="box"];
+rankdir=LR;
+
+mined [label="included in block"];
+sendminer [label="Send to miners"];
+
+subgraph clusterf {
+label="stateful";
+style=dotted;
+bgcolor=pink;
+buildtxf [label="User creates tx"]
+signtxf [label="User signs tx"]
+
+buildtxf -> signtxf
+}
+subgraph clusterl {
+label="stateless";
+style=dotted;
+bgcolor=lightblue;
+buildtxl [label="User creates tx"]
+signtxl [label="User signs tx"]
+relaysend [label="Send to relayer"]
+aggregate [label="Relayer aggregates"]
+relaysign [label="Relayer signs tx"]
+
+buildtxl -> signtxl -> relaysend -> aggregate -> relaysign
+}
+
+relaysign -> sendminer
+signtxf -> sendminer
+sendminer -> mined
+}
+

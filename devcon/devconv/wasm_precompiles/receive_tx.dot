@@ -1,0 +1,22 @@
+digraph D {
+    node [shape="box",color="green"];
+rankdir=LR;
+
+    subgraph clusterlegend {
+        label="Legend";
+        style=dotted;
+        key [label="precompile",style=filled]
+        key2 [label="EVM code",color="black"]
+        key -> key2 [style=invis]
+    }
+
+    unpack [color="black",label="Unpack tx"]
+    sigcheck [label="Check signature",style=filled]
+    precheck [label="Validate\npre root",style=filled]
+    postcheck [label="Validate\npost root",style=filled]
+    balancecheck [color="black",label="Check balance"]
+    updateroot [label="Update root",color="black"]
+    
+    unpack -> sigcheck -> precheck -> postcheck -> balancecheck -> updateroot
+}
+
