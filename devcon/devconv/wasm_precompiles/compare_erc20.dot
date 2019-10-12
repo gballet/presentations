@@ -1,18 +1,29 @@
 digraph D {
-node [shape="box"];
-subgraph cluster01 {
-node [border="0"];
-label="stateful contract storage";
-style="dotted,filled";
-bgcolor="lightyellow";
-contractf [style="filled",fillcolor="white",label=<<table cellborder="1" border="0">
-<tr><td>(key,value)</td><td>size (bytes)</td></tr><tr><td>account1: 100</td><td>32</td></tr><tr><td align="left">account2: 67</td><td>32</td></tr><tr><td align="left">account3: 34</td><td>32</td></tr><tr><td>...</td><td>32*N</td></tr></table>>]
-}
-subgraph cluster02 {
-label="stateless contract storage";
-style="dotted,filled";
-bgcolor="lightyellow";
-contractl [style="filled",fillcolor="white",label=<<table cellborder="1" border="0"><tr><td>data</td><td>size (bytes</td></tr><tr><td>tree root</td><td>32</td></tr><tr><td>total supply</td><td>32</td></tr></table>>]
-}
+	node [shape="box"];
+		subgraph cluster01 {
+		node [border="0"];
+		label="stateful contract storage";
+		style="dotted,filled";
+		bgcolor="lightyellow";
+		contractf [style="filled",fillcolor="white",label=<<table cellborder="1" border="0">
+			<tr><td>(key,value)</td><td>size (bytes)</td></tr>
+			<tr><td>account1: 100</td><td>64</td></tr>
+			<tr><td align="left">account2: 67</td><td>64</td></tr>
+			<tr><td align="left">account3: 34</td><td>64</td></tr>
+			<tr><td>...</td><td>64*N</td></tr>
+		</table>>]
+	}
+
+	subgraph cluster02 {
+		label="stateless contract storage";
+		style="dotted,filled";
+		bgcolor="lightyellow";
+		contractl [style="filled",fillcolor="white",label=<<table cellborder="1" border="0">
+			<tr><td>data</td><td>size (bytes</td></tr>
+			<tr><td>tree root</td><td>32</td></tr>
+			<tr><td>total supply</td><td>32</td></tr>
+			<tr><td>nonce</td><td>32</td></tr>
+		</table>>]
+	}
 }
 
