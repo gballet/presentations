@@ -1,0 +1,29 @@
+digraph D {
+	node [shape="box",label="hash"];
+
+	// root
+	subgraph cluster0 {
+		style=invis;
+		rootslots [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">10</td><td port="11">11</td><td port="12">12</td><td port="13">13</td><td port="14">14</td><td port="15">15</td></tr></table>>]
+	}
+
+	subgraph cluster1 {
+		style=invis;
+		branch1slots [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">10</td><td port="11">11</td><td port="12">12</td><td port="13">13</td><td port="14">14</td><td port="15">15</td></tr></table>>]
+	}
+
+	subgraph cluster2 {
+		style=invis;
+		branch2slots [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">10</td><td port="11">11</td><td port="12">12</td><td port="13">13</td><td port="14">14</td><td port="15">15</td></tr></table>>]
+	}
+
+	leaf12 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="start">3</td><td>4</td><td>0000</td></tr></table>>]
+	leaf4567 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="start">2222</td></tr></table>>]
+
+	rootslots:1 -> branch1slots
+	branch1slots:1 -> hash1
+	branch1slots:2 -> leaf12:start
+	rootslots:4 -> branch2slots
+	branch2slots:7 -> leaf4567:start
+	branch2slots:9 -> hash2
+}
