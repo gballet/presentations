@@ -1,0 +1,9 @@
+digraph D {
+    rankdir=LR
+    fund [shape=doublecircle]
+    node [shape=circle]
+    fund -> send
+    send -> refund [label="close"]
+    send -> send [label="send funds"]
+    refund -> refund [label="recover funds"]
+}

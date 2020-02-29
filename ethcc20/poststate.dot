@@ -1,0 +1,61 @@
+digraph D {
+    subgraph cluster_chain {
+    node [shape=square]
+    
+    r [label="head"]
+    b [label="n-1"]
+    c [label="n-2"]
+    d [label="n-3"]
+    r -> b -> c -> d
+    }
+
+    subgraph cluster_mainchain {
+        label = "state in main chain node";
+        node [style=filled,fillcolor=lightblue]
+        
+        root [fillcolor=lightblue]
+        child1 [label="Dapp #1"]
+        child2 [label="Dapp #2"]
+        root -> child1 
+        root -> child2
+        
+        state1 [shape=square,fillcolor=green,style=filled]
+        
+        state2 [shape=square,fillcolor=red,style=filled]
+        }
+        
+    subgraph cluster_dapp1 {
+        node [shape=square,fillcolor=green,style=filled]
+        label="state in Dap #1 node"
+        node [label="..."]
+        state11
+        state12
+        node [label="leaf"]
+        state11 -> state111
+        state11 -> state112
+        state12 -> state121
+        state12 -> state122
+        }
+        
+    subgraph cluster_dapp2 {
+        
+        node [style=filled,shape=square,fillcolor=red]
+        label="state in Dap #2 node"
+        node [label="..."]
+        state21
+        state22
+        node [label="leaf"]
+        state21 -> state211
+        state21 -> state212
+        state22 -> state221
+        state22 -> state222
+    }
+    
+    child1 -> state1
+    child2 -> state2
+    r -> root [dir=none,style=dashed]
+    state1 -> state11
+    state1 -> state12
+    state2 -> state21
+    state2 -> state22
+}

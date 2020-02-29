@@ -1,0 +1,10 @@
+Participant Alice
+Participant Alice's contract
+Participant Bob's contract
+Participant Bob
+Alice->Alice's contract: send 10
+Alice's contract->Bob's contract: send 5
+Bob's contract->Alice's contract: send 2
+Alice's contract->Bob's contract: send 1
+Bob->Alice's contract: close
+Alice's contract->Alice: refund

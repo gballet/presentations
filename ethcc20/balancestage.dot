@@ -1,0 +1,17 @@
+digraph D {
+sbranch [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]
+    	sbranch0000000 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]
+        {
+        rank=same;
+	    sleaf00000000 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">nonce</td><td port="balanceto">balance</td><td>code</td><td>state</td></tr></table>>]
+	    sleaf00000008 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">nonce</td><td port="balancefrom" bgcolor="red">balance</td><td>code</td><td>state</td></tr></table>>]
+        }
+	    sextension0 [shape=none,label=<<table border="0" cellspacing="0" cellborder="1"><tr><td port="0">0</td><td port="1">0</td><td port="2">0</td><td port="3">0</td><td port="4">0</td><td port="5">0</td></tr></table>>]
+
+        sbranch:0 -> sextension0:0
+        sextension0:5 -> sbranch0000000:0
+        sbranch0000000:0 -> sleaf00000000
+        sbranch0000000:8 -> sleaf00000008
+       
+        sleaf00000000 -> sleaf00000008 [style=invis]
+    }
