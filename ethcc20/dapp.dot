@@ -1,0 +1,12 @@
+digraph D {
+	dapp [shape=square,label="Dapp\nBuilds the proof\nPackage l2 txs\nCreate eth tx"]
+	{ rank=same; 
+	fullnode [shape=square,label="Full node\nPropagates Tx"]
+	fullnode2 [shape=square,label="Full node\nVerify proof validity\nApply l2 txs"]
+	network
+	}
+	user -> dapp [label="l2 tx"]
+	dapp -> fullnode [label="eth tx"]
+	fullnode -> network [label="eth tx"]
+	network -> fullnode2 [label="eth tx"]
+}

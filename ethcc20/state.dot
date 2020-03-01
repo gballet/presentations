@@ -22,9 +22,51 @@ digraph D {
 	    branch0d0e0a0d0b0e0e:0 -> leaf0d0e0a0d0b0e0e00
 	    branch0d0e0a0d0b0e0e:15 -> leaf0d0e0a0d0b0e0e0f
 	    branch:13 -> extension0d:0
-        leaf0d0e0a0d0b0e0e0f:sr -> sbranch
+        leaf0c0a0f0e0c:sr -> s0branch 
+        leaf0c0a0f0e0d:sr -> sbranch 
+        leaf0d0e0a0d0b0e0e00:sr -> s2branch
+        leaf0d0e0a0d0b0e0e0f:sr -> s1branch
     }
 
+    subgraph cluster_storage0 {
+        style=invis;
+	        s0branch [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]
+    	s0branch0000000 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]
+	    s0leaf00000000 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="0">3</td><td port="1">4</td><td port="2">5</td><td port="0">6</td><td port="1">7</td></tr></table>>]
+    	s0leaf00000008 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">8</td><td port="1">9</td><td port="2">a</td><td port="0">b</td><td port="1">c</td><td port="2">d</td><td port="0">e</td><td port="1">f</td></tr></table>>]
+	    s0extension0 [shape=none,label=<<table border="0" cellspacing="0" cellborder="1"><tr><td port="0">0</td><td port="1">0</td><td port="2">0</td><td port="3">0</td><td port="4">0</td><td port="5">0</td></tr></table>>]
+
+        s0branch:0 -> s0extension0:0
+        s0extension0:5 -> s0branch0000000:0
+        s0branch0000000:0 -> s0leaf00000000
+        s0branch0000000:8 -> s0leaf00000008
+    }
+    subgraph cluster_storage1 {
+        style=invis;
+	        s1branch [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]
+    	s1branch0000000 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]
+	    s1leaf00000000 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="0">3</td><td port="1">4</td><td port="2">5</td><td port="0">6</td><td port="1">7</td></tr></table>>]
+    	s1leaf00000008 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">8</td><td port="1">9</td><td port="2">a</td><td port="0">b</td><td port="1">c</td><td port="2">d</td><td port="0">e</td><td port="1">f</td></tr></table>>]
+	    s1extension0 [shape=none,label=<<table border="0" cellspacing="0" cellborder="1"><tr><td port="0">0</td><td port="1">0</td><td port="2">0</td><td port="3">0</td><td port="4">0</td><td port="5">0</td></tr></table>>]
+
+        s1branch:0 -> s1extension0:0
+        s1extension0:5 -> s1branch0000000:0
+        s1branch0000000:0 -> s1leaf00000000
+        s1branch0000000:8 -> s1leaf00000008
+    }
+    subgraph cluster_storage2 {
+        style=invis;
+	        s2branch [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]
+    	s2branch0000000 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]
+	    s2leaf00000000 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="0">3</td><td port="1">4</td><td port="2">5</td><td port="0">6</td><td port="1">7</td></tr></table>>]
+    	s2leaf00000008 [shape=none,margin=0,label=<<table border="0" cellborder="1" cellspacing="0" cellpadding="4"><tr><td port="0">8</td><td port="1">9</td><td port="2">a</td><td port="0">b</td><td port="1">c</td><td port="2">d</td><td port="0">e</td><td port="1">f</td></tr></table>>]
+	    s2extension0 [shape=none,label=<<table border="0" cellspacing="0" cellborder="1"><tr><td port="0">0</td><td port="1">0</td><td port="2">0</td><td port="3">0</td><td port="4">0</td><td port="5">0</td></tr></table>>]
+
+        s2branch:0 -> s2extension0:0
+        s2extension0:5 -> s2branch0000000:0
+        s2branch0000000:0 -> s2leaf00000000
+        s2branch0000000:8 -> s2leaf00000008
+    }
     subgraph cluster_storage {
         style=invis;
 	        sbranch [shape=none,label=<<table border="0" cellborder="1" cellspacing="0"><tr><td port="0">0</td><td port="1">1</td><td port="2">2</td><td port="3">3</td><td port="4">4</td><td port="5">5</td><td port="6">6</td><td port="7">7</td><td port="8">8</td><td port="9">9</td><td port="10">a</td><td port="11">b</td><td port="12">c</td><td port="13">d</td><td port="14">e</td><td port="15">f</td></tr></table>>]

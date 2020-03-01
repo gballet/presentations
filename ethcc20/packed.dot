@@ -1,0 +1,18 @@
+digraph D {
+    l [label=""]
+    r [label=""]
+    ll [label="Bob"]
+    rl [label="Alice"]
+
+    root -> l -> ll
+    l -> lr
+    root -> r -> rl
+    r -> rr
+    lr -> packed:hash1
+    rr -> packed:hash2
+    rl -> packed:rl
+    ll -> packed:ll
+    
+    packed [shape=none,label=<<table cellspacing="0" cellpadding="10"><tr><td port="ll">Bob</td><td port="hash1">Hash</td><td port="rl">Alice</td><td port="hash2">Hash</td><td>L,L,B,L,L,B,B</td></tr><tr><td>Alice,Bob,5</td><td>Bob,Alice,2</td><td>Alice,Bob,5</td><td>Bob,close</td><td>Alice,refund</td></tr></table>>]
+}
+
