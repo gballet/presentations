@@ -18,14 +18,16 @@ digraph D {
         child2 [label="Dapp #2"]
         root -> child1 
         root -> child2
-        
+
         node [shape=square,fillcolor=green]
+	state1 [label="root"]
         child1 -> state1
         node [label="..."]
         state1 -> state11
         state1 -> state12
         
         node [fillcolor=red]
+	state2 [label="root"]
         child2 -> state2
         state2 -> state21
         state2 -> state22

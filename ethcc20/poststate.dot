@@ -19,14 +19,14 @@ digraph D {
         root -> child1 
         root -> child2
         
-        state1 [shape=square,fillcolor=green,style=filled]
+        state1 [shape=square,fillcolor=green,style=filled,label="root"]
         
-        state2 [shape=square,fillcolor=red,style=filled]
+        state2 [shape=square,fillcolor=red,style=filled,label="root"]
         }
         
     subgraph cluster_dapp1 {
         node [shape=square,fillcolor=green,style=filled]
-        label="state in Dap #1 node"
+        label="state in Dapp #1 node"
         node [label="..."]
         state11
         state12
@@ -40,7 +40,7 @@ digraph D {
     subgraph cluster_dapp2 {
         
         node [style=filled,shape=square,fillcolor=red]
-        label="state in Dap #2 node"
+        label="state in Dapp #2 node"
         node [label="..."]
         state21
         state22
