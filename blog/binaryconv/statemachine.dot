@@ -1,0 +1,16 @@
+digraph D {
+    node [shape=circle]
+    a [label="stage 1"]
+    b [label="stage 2"]
+    c [label="stage 3"]
+    d [label="stage 4"]
+    fork [label="fork"]
+    
+    a -> b [label="activation\nblock"]
+    b -> c [label="N blocks"]
+    b -> b [label="< N consecutive,\nidentical roots"]
+    b -> fork [label="different\nroot"]
+    c -> c [label="< N consecutive,\nidentical roots"]
+    c -> fork [label="different root"]
+    c -> d [label="N consecutive\n roots"]
+}
