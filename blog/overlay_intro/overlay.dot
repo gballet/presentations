@@ -1,0 +1,67 @@
+digraph D {
+    blockformat [shape=none,label=<<table cellspacing="0" cellpadding="5"><tr><td>...</td></tr><tr><td port="hexroot">hexary base root (RO)</td></tr><tr><td port="binroot">binary overlay root (RW)  </td></tr><tr><td>...</td></tr></table>>]
+    
+    subgraph cluster_hextree {
+        node [shape=rect]
+        style=dotted
+        label="base tree (hexary, read-only)"
+        root
+        child0 [label="..."]
+        child1 [label="..."]
+        child2 [label="..."]
+        child3 [label="..."]
+        child4 [label="..."]
+        child5 [label="..."]
+        child6 [label="..."]
+        child7 [label="..."]
+        child8 [label="..."]
+        child9 [label="..."]
+        childa [label="..."]
+        childb [label="..."]
+        childc [label="..."]
+        childd [label="..."]
+        childe [label="..."]
+        childf [label="..."]
+        
+        root -> child0 [label="0"]
+        root -> child1 [label="1"]
+        root -> child2 [label="2"]
+        root -> child3 [label="3"]
+        root -> child4 [label="4"]
+        root -> child5 [label="5"]
+        root -> child6 [label="6"]
+        root -> child7 [label="7"]
+        root -> child8 [label="8"]
+        root -> child9 [label="9"]
+        root -> childa [label="a"]
+        root -> childb [label="b"]
+        root -> childc [label="c"]
+        root -> childd [label="d"]
+        root -> childe [label="e"]
+        root -> childf [label="f"]
+    }
+    
+    subgraph cluster_overlay {
+        style=dotted
+        label="overlay tree (binary, read-write)"
+        node [shape=rect]
+        
+        overlay_root [label="root"]
+        bchild0 [label=""]
+        bchild00 [label="..."]
+        bchild01 [label="..."]
+        bchild1 [label=""]
+        bchild10 [label="..."]
+        bchild11 [label="..."]
+        
+        overlay_root -> bchild0 [label="0"]
+        overlay_root -> bchild1 [label="1"]
+        bchild0 -> bchild00 [label="0"]
+        bchild0 -> bchild01 [label="1"]
+        bchild1 -> bchild10 [label="0"]
+        bchild1 -> bchild11 [label="1"]
+    }
+    
+    blockformat:hexroot -> root
+    blockformat:binroot -> overlay_root
+}

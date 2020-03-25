@@ -1,0 +1,47 @@
+digraph D {
+    blockformat [shape=none,label=<<table cellspacing="0" cellpadding="5"><tr><td>...</td></tr><tr><td port="baseroot"><b>binary</b> base root (RO)</td></tr><tr><td port="binroot">binary overlay root (RW)  </td></tr><tr><td>...</td></tr></table>>]
+    
+    subgraph cluster_hextree {
+        node [shape=rect]
+        style=dotted
+        label="base tree (binary, read-only)"
+        root
+        bchild0 [label=""]
+        bchild00 [label="..."]
+        bchild01 [label="..."]
+        bchild1 [label=""]
+        bchild10 [label="..."]
+        bchild11 [label="..."]
+        
+        root -> bchild0 [label="0"]
+        root -> bchild1 [label="1"]
+        bchild0 -> bchild00 [label="0"]
+        bchild0 -> bchild01 [label="1"]
+        bchild1 -> bchild10 [label="0"]
+        bchild1 -> bchild11 [label="1"]
+    }
+    
+    subgraph cluster_overlay {
+        style=dotted
+        label="overlay tree (binary, read-write)"
+        node [shape=rect]
+        
+        overlay_root [label="root"]
+        ochild0 [label=""]
+        ochild00 [label="..."]
+        ochild01 [label="..."]
+        ochild1 [label=""]
+        ochild10 [label="..."]
+        ochild11 [label="..."]
+        
+        overlay_root -> ochild0 [label="0"]
+        overlay_root -> ochild1 [label="1"]
+        ochild0 -> ochild00 [label="0"]
+        ochild0 -> ochild01 [label="1"]
+        ochild1 -> ochild10 [label="0"]
+        ochild1 -> ochild11 [label="1"]
+    }
+    
+    blockformat:baseroot -> root
+    blockformat:binroot -> overlay_root
+}
