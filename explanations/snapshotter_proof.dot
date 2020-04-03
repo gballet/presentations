@@ -1,0 +1,11 @@
+digraph D {
+    node [shape=rect]
+    a -> b [color="red",label="5"]
+    a -> c [color="red",label="9"]
+    
+    b -> d [label="4"]
+    b -> e [color="red",label="7"]
+    c -> f [color="red",label="3"]
+    c -> g [color="red",label="8"]
+    c -> h [label="e"]
+}
