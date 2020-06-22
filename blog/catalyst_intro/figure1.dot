@@ -1,0 +1,47 @@
+digraph D {
+    node [shape=square];
+    rankdir="LR";
+   
+    subgraph cluster_validator {
+        style=dashed;
+        
+        eth2v [label="Eth2 client"]
+        eth1v [label="Eth1 client"]
+
+        eth2v -> eth1v [label="validateBlock"]
+        eth1v -> eth2v [label="true/flase"]
+    }
+
+    subgraph cluster_proposer {
+        style=dashed;
+        
+        eth2p [label="Eth2 client"]
+        eth1p [label="Eth1 client"]
+        
+        eth2p -> eth1p [label="produceBlock"]
+        eth1p -> eth2p [label="block"]
+    }
+    
+    subgraph cluster_chain {
+        style = dashed;
+        node [label=""]
+
+        e [style=dashed]
+        
+        a -> b -> c -> d -> e
+    
+    }
+    subgraph cluster_node {
+        style = dashed;
+        
+        eth2n [label="Eth2 client"]
+        eth1n [label="Eth1 client"]
+        
+        eth2n -> eth1n [label="insertBlock"]
+        eth2n -> eth1n [label="setHead"]
+    }
+    
+    eth2p -> e [label="1"]
+    e -> eth2v [label="2"]
+    e -> eth2n [label="3"]
+}

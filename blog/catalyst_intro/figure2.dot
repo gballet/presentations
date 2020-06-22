@@ -1,0 +1,19 @@
+digraph D {
+    node [shape=square,label=""]
+    curhead [shape=none,label="current head H¹"]
+    newhead [shape=none,label="new head H²"]
+    curhead -> f
+    newhead -> i
+    f [label="↖"]
+    e [label="↗"]
+    
+    d [label="F"]
+    
+    a [shape="none",label="last finalized block"]
+    a -> c -> d -> e -> f
+    g [label="↙"]
+    i [label="🏁"]
+    d -> g [label="ϒ"]
+    g -> i [label="ϒ"]
+    
+}

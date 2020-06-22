@@ -1,0 +1,13 @@
+digraph D {
+    node [shape=square,label=""]
+    i [label="H²"]
+    
+    d [label="H¹=F"]
+    g [label="↓"]
+    
+    a [shape="none",label="last finalized block"]
+    a -> c -> d
+    d -> g [label="ϒ"]
+    g -> i [label="ϒ"]
+    
+}
