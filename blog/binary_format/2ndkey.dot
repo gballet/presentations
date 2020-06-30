@@ -1,0 +1,10 @@
+digraph D {
+    node [shape=none]
+    node [shape=none]
+    root [label=<<table border="0" cellspacing="0" cellborder="1"><tr><td port="bp">0x07cafe</td><td port="left"></td><td port="right"></td><td>∅</td></tr></table>>]
+    cafe [label=<<table border="0" cellspacing="0" cellborder="1"><tr><td port="bp">0x00</td><td port="left">∅</td><td port="right">∅</td><td>0x00</td></tr></table>>]
+    caff [label=<<table border="0" cellspacing="0" cellborder="1"><tr><td port="bp">0x00</td><td port="left">∅</td><td port="right">∅</td><td>0x01</td></tr></table>>]
+    
+    root:left -> cafe:bp [label="left [0]"]
+    root:right -> caff:bp [label="right [1]"]
+}

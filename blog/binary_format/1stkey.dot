@@ -1,0 +1,4 @@
+digraph D {
+    node [shape=none]
+    root [label=<<table border="0" cellspacing="0" cellborder="1"><tr><td port="bp">0x00cafe</td><td port="left">∅</td><td port="right">∅</td><td>0x00</td></tr></table>>]
+}
