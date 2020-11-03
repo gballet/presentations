@@ -6,7 +6,7 @@
 <desc>
 Creator: GL2PS 1.4.0, (C) 1999-2017 C. Geuzaine
 For: Octave
-CreationDate: Mon Nov  2 17:39:42 2020
+CreationDate: Tue Nov  3 16:36:29 2020
 </desc>
 <defs>
 </defs>
@@ -51,18 +51,18 @@ CreationDate: Mon Nov  2 17:39:42 2020
 <polyline fill="none" stroke="#262626" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="16,0" points="187.094,384.48 187.094,38"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="110.891,384.48 93.9565,377.608 93.9565,384.48"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="93.9565,377.608 110.891,384.48 110.891,377.608"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="132.058,384.48 115.124,381.831 115.124,384.48"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="115.124,381.831 132.058,384.48 132.058,381.831"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="132.058,384.48 115.124,382.33 115.124,384.48"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="115.124,382.33 132.058,384.48 132.058,382.33"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="153.226,384.48 136.292,55.1571 136.292,384.48"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="136.292,55.1571 153.226,384.48 153.226,55.1571"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="174.394,384.48 157.459,261.364 157.459,384.48"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="157.459,261.364 174.394,384.48 174.394,261.364"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="174.394,384.48 157.459,290.446 157.459,384.48"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="157.459,290.446 174.394,384.48 174.394,290.446"/>
 <text fill="#000000" x="71.175" y="12" font-size="11" text-anchor="start" dy="0" font-family="Helvetica" font-weight="bold">Trie root calculation</text>
 <text fill="#000000" x="99.175" y="26" font-size="11" text-anchor="start" dy="0" font-family="Helvetica" font-weight="bold">(1K leaves)</text>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="110.891,377.608 93.9565,377.608 93.9565,384.48 110.891,384.48 110.891,377.608"/>
-<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="132.058,381.831 115.124,381.831 115.124,384.48 132.058,384.48 132.058,381.831"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="132.058,382.33 115.124,382.33 115.124,384.48 132.058,384.48 132.058,382.33"/>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="153.226,55.1571 136.292,55.1571 136.292,384.48 153.226,384.48 153.226,55.1571"/>
-<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="174.394,261.364 157.459,261.364 157.459,384.48 174.394,384.48 174.394,261.364"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="174.394,290.446 157.459,290.446 157.459,384.48 174.394,384.48 174.394,290.446"/>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="81.2559,384.48 187.094,384.48"/>
 </g>
 <clipPath id="cp00576432">
@@ -103,18 +103,18 @@ CreationDate: Mon Nov  2 17:39:42 2020
 <polyline fill="none" stroke="#262626" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="16,0" points="354.187,384.48 354.187,38"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="277.984,384.48 261.049,377.293 261.049,384.48"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="261.049,377.293 277.984,384.48 277.984,377.293"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="299.151,384.48 282.217,381.344 282.217,384.48"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="282.217,381.344 299.151,384.48 299.151,381.344"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="299.151,384.48 282.217,382.182 282.217,384.48"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="282.217,382.182 299.151,384.48 299.151,382.182"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="320.319,384.48 303.385,52.2451 303.385,384.48"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="303.385,52.2451 320.319,384.48 320.319,52.2451"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="341.486,384.48 324.552,253.617 324.552,384.48"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="324.552,253.617 341.486,384.48 341.486,253.617"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="341.486,384.48 324.552,286.843 324.552,384.48"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="324.552,286.843 341.486,384.48 341.486,286.843"/>
 <text fill="#000000" x="238.268" y="12" font-size="11" text-anchor="start" dy="0" font-family="Helvetica" font-weight="bold">Trie root calculation</text>
 <text fill="#000000" x="262.268" y="26" font-size="11" text-anchor="start" dy="0" font-family="Helvetica" font-weight="bold">(10K leaves)</text>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="277.984,377.293 261.049,377.293 261.049,384.48 277.984,384.48 277.984,377.293"/>
-<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="299.151,381.344 282.217,381.344 282.217,384.48 299.151,384.48 299.151,381.344"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="299.151,382.182 282.217,382.182 282.217,384.48 299.151,384.48 299.151,382.182"/>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="320.319,52.2451 303.385,52.2451 303.385,384.48 320.319,384.48 320.319,52.2451"/>
-<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="341.486,253.617 324.552,253.617 324.552,384.48 341.486,384.48 341.486,253.617"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="341.486,286.843 324.552,286.843 324.552,384.48 341.486,384.48 341.486,286.843"/>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="248.349,384.48 354.187,384.48"/>
 </g>
 <clipPath id="cp00576432">
@@ -158,18 +158,18 @@ CreationDate: Mon Nov  2 17:39:42 2020
 <polyline fill="none" stroke="#262626" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" stroke-dasharray="16,0" points="521.28,384.48 521.28,38"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="445.076,384.48 428.142,377.057 428.142,384.48"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="428.142,377.057 445.076,384.48 445.076,377.057"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="466.244,384.48 449.31,381.575 449.31,384.48"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="449.31,381.575 466.244,384.48 466.244,381.575"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="466.244,384.48 449.31,382.163 449.31,384.48"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="449.31,382.163 466.244,384.48 466.244,382.163"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="487.412,384.48 470.478,51.6407 470.478,384.48"/>
 <polygon fill="#440154" shape-rendering="crispEdges" points="470.478,51.6407 487.412,384.48 487.412,51.6407"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="508.579,384.48 491.645,261.323 491.645,384.48"/>
-<polygon fill="#440154" shape-rendering="crispEdges" points="491.645,261.323 508.579,384.48 508.579,261.323"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="508.579,384.48 491.645,297.123 491.645,384.48"/>
+<polygon fill="#440154" shape-rendering="crispEdges" points="491.645,297.123 508.579,384.48 508.579,297.123"/>
 <text fill="#000000" x="405.361" y="12" font-size="11" text-anchor="start" dy="0" font-family="Helvetica" font-weight="bold">Trie root calculation</text>
 <text fill="#000000" x="429.361" y="26" font-size="11" text-anchor="start" dy="0" font-family="Helvetica" font-weight="bold">(50K leaves)</text>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="445.076,377.057 428.142,377.057 428.142,384.48 445.076,384.48 445.076,377.057"/>
-<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="466.244,381.575 449.31,381.575 449.31,384.48 466.244,384.48 466.244,381.575"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="466.244,382.163 449.31,382.163 449.31,384.48 466.244,384.48 466.244,382.163"/>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="487.412,51.6407 470.478,51.6407 470.478,384.48 487.412,384.48 487.412,51.6407"/>
-<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="508.579,261.323 491.645,261.323 491.645,384.48 508.579,384.48 508.579,261.323"/>
+<polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="508.579,297.123 491.645,297.123 491.645,384.48 508.579,384.48 508.579,297.123"/>
 <polyline fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="butt" stroke-linejoin="miter" points="415.442,384.48 521.28,384.48"/>
 </g>
 </g>
