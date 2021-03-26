@@ -1,0 +1,13 @@
+x = [0:.1:7]
+p1 = (x-4).*(x-1)/(2-4)/(2-1)
+p2 = (x-2).*(x-1)/(4-2)/(4-1)
+p3 = (x-4).*(x-2)/(1-4)/(1-2)
+plot(x,p1,x,p2,x,p3,x,3*p1.-p2.+8*p3,":",x,x.^2-8*x+15,"--")
+line([0 7], [1, 1], "linestyle", ":", "color", "black")
+line([0 7], [0, 0], "linestyle", ":", "color", "black")
+line([1 1], [-4, 4], "linestyle", ":", "color", "black")
+line([2 2], [-4, 4], "linestyle", ":", "color", "black")
+line([4 4], [-4, 4], "linestyle", ":", "color", "black")
+legend("p1(x)","p2(x)","p3(x)","3p1(x)-p2(x)+8p3(x)", "x^2-8x+15")
+ylim([-4 4])
+title("x²-8x+15, [3 -1 8] and the base polynomials")
