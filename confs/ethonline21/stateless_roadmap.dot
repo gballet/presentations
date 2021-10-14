@@ -1,0 +1,6 @@
+digraph D {
+    bgcolor="transparent"
+    verkle -> ASE -> stateless
+    verkle -> stateless [style=dotted,label="?"]
+    portal -> stateless
+}
